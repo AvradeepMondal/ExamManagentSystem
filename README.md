@@ -52,7 +52,7 @@ A **microservices-based exam management platform** built using **Java, Spring Bo
 | :------------------- | :----------------------------------------------------------------------- | :--------: |
 | **Discovery Server** | [discoverServerExm](https://github.com/AvradeepMondal/discoverServerExm) | 🟢 Active  |
 | **API Gateway**      | *Coming Soon*                                                            | 🟡 Planned |
-| **Auth Service**     | *Coming Soon*                                                            | 🟡 Planned |
+| **Auth Service**     | [auth-service](https://github.com/AvradeepMondal/auth-service-Exm)       | 🟢 Active  |
 | **User Service**     | *Coming Soon*                                                            | 🟡 Planned |
 | **Quiz Service**     | *Coming Soon*                                                            | 🟡 Planned |
 | **Question Service** | [question-service](https://github.com/AvradeepMondal/question-service)   | 🟢 Active  |
