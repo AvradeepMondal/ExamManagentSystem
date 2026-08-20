@@ -1,13 +1,14 @@
+
 # Exam Management System
 
 A **microservices-based exam management platform** built using **Java, Spring Boot, Spring Security, JWT, MongoDB, Redis, and Spring Cloud**.
 
 ## 🏗️ Architecture
 
-**
+```text
                               +------------------+
                               |      Client      |
-                              |  Web / Mobile    |
+                              |   Web / Mobile   |
                               +--------+---------+
                                        |
                                        v
@@ -17,10 +18,10 @@ A **microservices-based exam management platform** built using **Java, Spring Bo
                               +--------+---------+
                                        |
              +-------------------------+-------------------------+
-             |            |             |            |           |
-             v            v             v            v           v
+             |            |            |            |            |
+             v            v            v            v            v
        +-----------+ +-----------+ +-----------+ +-----------+ +-----------+
-       |   Auth    | |   User    | |   Quiz    | |  Question | |  Result   |
+       |   Auth    | |   User    | |   Quiz    | | Question  | |  Result   |
        |  Service  | |  Service  | |  Service  | |  Service  | |  Service  |
        +-----------+ +-----------+ +-----+-----+ +-----+-----+ +-----------+
                                          |             |
@@ -35,29 +36,30 @@ A **microservices-based exam management platform** built using **Java, Spring Bo
                   +-------------+                 +-------------+
                   |   MongoDB   |                 |    Redis    |
                   +-------------+                 +-------------+
-**
+
                     +--------------------------------------+
-                    |        Discovery Server (Eureka)     |
-                    |                 :8761                |
+                    |       Discovery Server (Eureka)      |
+                    |                :8761                 |
                     +--------------------------------------+
-                       ^       ^       ^       ^       ^
-                       |       |       |       |       |
-                       +-------+-------+-------+-------+
-                               Service Registration
-**
+                       ^        ^        ^        ^        ^
+                       |        |        |        |        |
+                       +--------+--------+--------+--------+
+                                Service Registration
+
+```
 
 ## 🧩 Microservices
 
-| Service              | Repository                                                               |   Status   |
-| :------------------- | :----------------------------------------------------------------------- | :--------: |
-| **Discovery Server** | [discoverServerExm](https://github.com/AvradeepMondal/discoverServerExm) | 🟢 Active  |
-| **API Gateway**      | [api-gateway](https://github.com/AvradeepMondal/api-gateway-Exm)         | 🟢 Active  |
-| **Auth Service**     | [auth-service](https://github.com/AvradeepMondal/auth-service-Exm)       | 🟢 Active  |
-| **User Service**     | [user-service](https://github.com/AvradeepMondal/user-service-Exm)       | 🟢 Active  |
-| **Quiz Service**     | *Coming Soon*                                                            | 🟡 Planned |
-| **Question Service** | [question-service](https://github.com/AvradeepMondal/question-service)   | 🟢 Active  |
-| **Result Service**   | *Coming Soon*                                                            | 🟡 Planned |
-| **AI Service**       | [ai-service](https://github.com/AvradeepMondal/ai-service)               | 🟢 Active  |
+| Service | Repository | Status |
+| --- | --- | --- |
+| **Discovery Server** | [discoverServerExm](https://github.com/AvradeepMondal/discoverServerExm) | 🟢 Active |
+| **API Gateway** | [api-gateway](https://github.com/AvradeepMondal/api-gateway-Exm) | 🟢 Active |
+| **Auth Service** | [auth-service](https://github.com/AvradeepMondal/auth-service-Exm) | 🟢 Active |
+| **User Service** | [user-service](https://github.com/AvradeepMondal/user-service-Exm) | 🟢 Active |
+| **Quiz Service** | *Coming Soon* | 🟡 Planned |
+| **Question Service** | [question-service](https://github.com/AvradeepMondal/question-service) | 🟢 Active |
+| **Result Service** | *Coming Soon* | 🟡 Planned |
+| **AI Service** | [ai-service](https://github.com/AvradeepMondal/ai-service) | 🟢 Active |
 
 ## 🛠️ Technologies
 
@@ -70,6 +72,10 @@ A **microservices-based exam management platform** built using **Java, Spring Bo
 
 ## 🚧 Project Status
 
-**Ongoing Development**
+🚧 **Ongoing Development**
 
 Individual microservices are being developed and integrated progressively.
+
+```
+
+```
